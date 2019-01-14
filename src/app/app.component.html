@@ -4,7 +4,7 @@
 
 <nav soho-application-menu [triggers]="['#lm-m-nav-button']" [openOnLarge]="false">
   <soho-accordion [allowOnePane]="false" [inverse]="true">
-    <soho-accordion-header class="category-expander" [isExpanded]="true">Top-level header</soho-accordion-header>
+    <soho-accordion-header [isExpanded]="true">Top-level header</soho-accordion-header>
     <soho-accordion-pane>
       <soho-accordion-header *ngFor="let link of links$ | async" (click)="openLink(link)">
         <span>{{link}}</span>
@@ -16,8 +16,7 @@
   	<soho-header [hasToolbar]="true">
 		<soho-toolbar>
 			<soho-toolbar-title>
-				<button soho-nav-button
-				        id="lm-m-nav-button">Toggle menu</button>
+				<button soho-nav-button>Toggle menu</button>
 				<h1 class="page-title">{{title}}</h1>
 			</soho-toolbar-title>
 		</soho-toolbar>
