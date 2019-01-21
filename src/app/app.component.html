@@ -2,29 +2,52 @@
 <soho-icons-ext></soho-icons-ext>
 <soho-icons-empty></soho-icons-empty>
 
-<nav soho-application-menu [triggers]="['#lm-m-nav-button']" [openOnLarge]="false">
-  <soho-accordion [allowOnePane]="false" [inverse]="true">
-    <soho-accordion-header class="category-expander" [isExpanded]="true">Top-level header</soho-accordion-header>
-    <soho-accordion-pane>
-      <soho-accordion-header *ngFor="let link of links$ | async" (click)="openLink(link)">
-        <span>{{link}}</span>
-      </soho-accordion-header>
-    </soho-accordion-pane>
-  </soho-accordion>
-</nav>
-<div class="page-container">
-  	<soho-header [hasToolbar]="true">
-		<soho-toolbar>
-			<soho-toolbar-title>
-				<button soho-nav-button
-				        id="lm-m-nav-button">Toggle menu</button>
-				<h1 class="page-title">{{title}}</h1>
-			</soho-toolbar-title>
-		</soho-toolbar>
-	</soho-header>
-  <soho-listview>
-    <li soho-listview-item *ngFor="let log of logs$ | async">
-        <p soho-listview-header>{{log}}</p>
-    </li>
-  </soho-listview>
+<div soho-homepage>
+  <div soho-widget>
+    <div soho-widget-header>
+      <div soho-widget-title>
+        <h2>First Widget Title</h2>
+      </div>
+    </div>
+    <div soho-widget-content>
+      <h1>BEGIN First Widget Content</h1>
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">First List Title</h2>
+        </div>
+        <div class="card-content">
+          <soho-listview>
+            <li soho-listview-item *ngFor="let item of list">
+              {{item}}
+            </li>
+          </soho-listview>
+        </div>
+      </div>
+      <h1>END First Widget Content</h1>
+    </div>
+  </div>
+
+  <div soho-widget>
+    <div soho-widget-header>
+      <div soho-widget-title>
+        <h2>Second Widget Title</h2>
+      </div>
+    </div>
+    <div soho-widget-content>
+      <h1>BEGIN Second Widget Content</h1>
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Second List Title</h2>
+        </div>
+        <div class="card-content">
+          <soho-listview>
+            <li soho-listview-item *ngFor="let item of list">
+              {{item}}
+            </li>
+          </soho-listview>
+        </div>
+      </div>
+      <h1>END Second Widget Content</h1>
+    </div>
+  </div>
 </div>
