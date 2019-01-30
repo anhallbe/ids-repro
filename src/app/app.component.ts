@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SohoToastService } from 'ids-enterprise-ng';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +14,13 @@ export class AppComponent {
     'Item 4',
     'Item 5',
   ];
+
+  constructor(private toastService: SohoToastService) {}
+
+  itemClicked(item: string) {
+    this.toastService.show({
+      title: 'Item Clicked',
+      message: item,
+    });
+  }
 }
