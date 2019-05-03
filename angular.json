@@ -51,7 +51,7 @@
               {
                 "glob": "**/*",
                 "input": "./node_modules/ids-enterprise/dist/js/cultures",
-                "output": "/assets/ids-enterprise/js/cultures"
+                "output": "/"
               }
             ],
             "styles": [
