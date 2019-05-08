@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { IosContextMenuComponent } from './ios-context-menu/ios-context-menu.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NestedBusyComponent } from './nested-busy/nested-busy.component';
+import { AccordionFocusComponent } from './accordion-focus/accordion-focus.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     IosContextMenuComponent,
-    NestedBusyComponent
+    NestedBusyComponent,
+    AccordionFocusComponent
   ],
   imports: [
     BrowserModule,
