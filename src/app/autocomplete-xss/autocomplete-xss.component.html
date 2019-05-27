@@ -1,0 +1,7 @@
+<p>
+  Insert '<' in the field below to execute the script in the search result. Insert 'xss' to see the same search result, but sanitized.
+</p>
+<div class="field">
+  <label soho-label>Model: {{selected}}</label>
+  <input soho-autocomplete [source]="source" filterMode="contains" [(ngModel)]="selected" placeholder="Search for <script">
+</div>

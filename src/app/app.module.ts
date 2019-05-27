@@ -6,6 +6,8 @@ import { IosContextMenuComponent } from './ios-context-menu/ios-context-menu.com
 import { AppRoutingModule } from './app-routing.module';
 import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { AccordionFocusComponent } from './accordion-focus/accordion-focus.component';
+import { AutocompleteXssComponent } from './autocomplete-xss/autocomplete-xss.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,10 +15,12 @@ import { AccordionFocusComponent } from './accordion-focus/accordion-focus.compo
     AppComponent,
     IosContextMenuComponent,
     NestedBusyComponent,
-    AccordionFocusComponent
+    AccordionFocusComponent,
+    AutocompleteXssComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     SohoComponentsModule,
     AppRoutingModule,
   ],
