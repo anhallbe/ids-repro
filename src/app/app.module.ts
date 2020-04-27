@@ -8,6 +8,7 @@ import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { AccordionFocusComponent } from './accordion-focus/accordion-focus.component';
 import { AutocompleteXssComponent } from './autocomplete-xss/autocomplete-xss.component';
 import { FormsModule } from '@angular/forms';
+import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     IosContextMenuComponent,
     NestedBusyComponent,
     AccordionFocusComponent,
-    AutocompleteXssComponent
+    AutocompleteXssComponent,
+    PopupmenuNavigationComponent
   ],
   imports: [
     BrowserModule,

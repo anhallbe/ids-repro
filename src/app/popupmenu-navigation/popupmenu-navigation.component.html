@@ -1,0 +1,15 @@
+<p>
+    Clicking the popupmenu item below will cause a navigation event.
+</p>
+
+<button soho-context-menu registerForEvents="" trigger="click" attr.menu="menu" type="button" class="btn-actions">
+    <svg soho-icon icon="more"></svg>
+</button>
+<ul class="popupmenu" id="menu">
+    <li soho-popupmenu-item *ngIf="showItem">
+        <a soho-popupmenu-label (click)="hideItem()">This link will cause navigation</a>
+    </li>
+    <li soho-popupmenu-item>
+        <a soho-popupmenu-label>...but this will not</a>
+    </li>
+</ul>
