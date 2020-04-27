@@ -10,5 +10,8 @@ export class PopupmenuNavigationComponent {
 
   hideItem() {
     this.showItem = false;
+    setTimeout(() => {
+      this.showItem = true;
+    }, 1000);
   }
 }
