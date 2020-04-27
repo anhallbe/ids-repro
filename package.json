@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build-gh-pages": "ng build --prod --base-href \"https://anhallbe.github.io/ids-repro/\"",
+    "deploy": "ng deploy",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
@@ -34,7 +34,7 @@
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
-    "angular-cli-ghpages": "^0.5.3",
+    "angular-cli-ghpages": "^0.6.2",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",

@@ -4,16 +4,20 @@
    "version": "2.0.0",
    "tasks": [
       {
-        "label": "Build GitHub Pages",
+         "label": "Angular dev server",
          "type": "npm",
-         "script": "build-gh-pages",
-         "problemMatcher": []
+         "script": "start",
+         "group": "build",
+         "problemMatcher": [
+            "$tsc-watch"
+         ]
       },
       {
-        "label": "Deploy GitHub Pages",
-        "type": "shell",
-        "command": "npx ngh --dir=dist/ids-repro",
-        "problemMatcher": []
-      }
+         "label": "Deploy GitHub Pages",
+         "type": "npm",
+         "group": "build",
+         "script": "deploy",
+         "problemMatcher": []
+      },
    ]
 }
