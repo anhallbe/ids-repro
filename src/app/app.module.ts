@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { SohoComponentsModule } from 'ids-enterprise-ng';
@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AutocompleteXssComponent } from './autocomplete-xss/autocomplete-xss.component';
 import { CheckboxModalComponent, InnerModalComponent } from './checkbox-modal/checkbox-modal.component';
 import { IosContextMenuComponent } from './ios-context-menu/ios-context-menu.component';
+import { LookupComponent } from './lookup/lookup.component';
 import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
 
@@ -22,6 +23,7 @@ import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-n
     PopupmenuNavigationComponent,
     CheckboxModalComponent,
     InnerModalComponent,
+    LookupComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,16 @@ import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-n
     SohoComponentsModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: () => () => {
+        Soho.Locale.culturesPath = '/assets/ids-enterprise/js/cultures/';
+        Soho.Locale.set('en-US');
+      },
+      multi: true,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

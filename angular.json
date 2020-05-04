@@ -52,7 +52,7 @@
               {
                 "glob": "**/*",
                 "input": "./node_modules/ids-enterprise/dist/js/cultures",
-                "output": "/"
+                "output": "/assets/ids-enterprise/js/cultures"
               }
             ],
             "styles": [

@@ -4,6 +4,7 @@ import { AccordionFocusComponent } from './accordion-focus/accordion-focus.compo
 import { AutocompleteXssComponent } from './autocomplete-xss/autocomplete-xss.component';
 import { CheckboxModalComponent } from './checkbox-modal/checkbox-modal.component';
 import { IosContextMenuComponent } from './ios-context-menu/ios-context-menu.component';
+import { LookupComponent } from './lookup/lookup.component';
 import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
 
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'autocomplete-xss', component: AutocompleteXssComponent },
   { path: 'popupmenu-navigation', component: PopupmenuNavigationComponent },
   { path: 'checkbox-modal', component: CheckboxModalComponent },
+  { path: 'lookup', component: LookupComponent },
 ];
 
 @NgModule({

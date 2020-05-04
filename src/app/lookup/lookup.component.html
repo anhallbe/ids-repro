@@ -1,0 +1,14 @@
+<p>
+    Deleting the selection and then selecting new items still shows required alert
+</p>
+<div class="row">
+    <div class="six columns">
+        <div class="field">
+            <label for="lookup" soho-label [required]="true">Lookup</label>
+            <input soho-lookup [(ngModel)]="model" [dataset]="dataset" [columns]="columns" title="Lookup Test"
+                field="foo" data-validate="required">
+            <br>
+            <small>Model: {{model}}</small>
+        </div>
+    </div>
+</div>
