@@ -1,13 +1,30 @@
 <soho-icons></soho-icons>
 <soho-icons-empty></soho-icons-empty>
 
-Index:
-<a routerLink="ios-context-menu">iOS Context Menu</a>
-<a routerLink="nested-busy">Nested Busy</a>
-<a routerLink="accordion-focus">Accordion Focus</a>
-<a routerLink="autocomplete-xss">Autocomplete XSS</a>
-<a routerLink="popupmenu-navigation">Popupmenu Navigation</a>
-<a routerLink="checkbox-modal">Checkbox Modal</a>
-<a routerLink="lookup">Lookup</a>
-<hr>
-<router-outlet></router-outlet>
+<soho-header>
+    <soho-toolbar-flex>
+        <button soho-toolbar-flex-nav-button>Show Navigation</button>
+        <soho-toolbar-flex-section [isTitle]="true">
+            <h2 soho-toolbar-flex-page-title>IDS Repro</h2>
+        </soho-toolbar-flex-section>
+        <soho-toolbar-flex-section [isButtonSet]="true">
+            <a href="https://github.com/anhallbe/ids-repro" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/github.png" alt="asd" height="32" width="32" />
+            </a>
+        </soho-toolbar-flex-section>
+    </soho-toolbar-flex>
+</soho-header>
+<nav soho-application-menu [openOnLarge]="true" [dismissOnClickMobile]="true">
+    <div class="accordion-header"><a routerLink="ios-context-menu">iOS Context Menu</a></div>
+    <div class="accordion-header"><a routerLink="nested-busy">Nested Busy</a></div>
+    <div class="accordion-header"><a routerLink="accordion-focus">Accordion Focus</a></div>
+    <div class="accordion-header"><a routerLink="autocomplete-xss">Autocomplete XSS</a></div>
+    <div class="accordion-header"><a routerLink="popupmenu-navigation">Popupmenu Navigation</a></div>
+    <div class="accordion-header"><a routerLink="checkbox-modal">Checkbox Modal</a></div>
+    <div class="accordion-header"><a routerLink="lookup">Lookup</a></div>
+</nav>
+<div class="page-container no-scroll">
+    <div id="maincontent" class="page-container scrollable" role="main">
+        <router-outlet></router-outlet>
+    </div>
+</div>
