@@ -7,6 +7,7 @@ import { IosContextMenuComponent } from './ios-context-menu/ios-context-menu.com
 import { LookupComponent } from './lookup/lookup.component';
 import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 const routes: Routes = [
   { path: 'ios-context-menu', component: IosContextMenuComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'popupmenu-navigation', component: PopupmenuNavigationComponent },
   { path: 'checkbox-modal', component: CheckboxModalComponent },
   { path: 'lookup', component: LookupComponent },
+  { path: 'tabs', component: TabsComponent },
 ];
 
 @NgModule({

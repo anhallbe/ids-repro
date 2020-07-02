@@ -1,0 +1,48 @@
+<div class="row">
+    <section class="six columns">
+        <p>
+            Use the resize handle to resize the tabbed section below.
+            The "more" menu, separator and gradient is present even if
+            the element is sized such that all the tabs should fit.
+        </p>
+        <p>
+            You can force it to update by triggering a <button soho-button="primary" (click)="triggerResize()">Window Resize Event</button>.
+        </p>
+    </section>
+</div>
+<div class="row">
+    <section class="three columns" style="resize: both; overflow: hidden;">
+        <div soho-tabs>
+            <div soho-tab-list-container>
+                <ul soho-tab-list>
+                    <li soho-tab>
+                        <a soho-tab-title tabId="tab-a">
+                            Tab Section A
+                        </a>
+                    </li>
+                    <li soho-tab>
+                        <a soho-tab-title tabId="tab-b">
+                            Tab Section B
+                        </a>
+                    </li>
+                    <li soho-tab>
+                        <a soho-tab-title tabId="tab-c">
+                            Tab Section C
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div soho-tab-panel-container>
+            <div soho-tab-panel tabId="tab-a">
+                <h1>Tab A</h1>
+            </div>
+            <div soho-tab-panel tabId="tab-b">
+                <h1>Tab B</h1>
+            </div>
+            <div soho-tab-panel tabId="tab-c">
+                <h1>Tab C</h1>
+            </div>
+        </div>
+    </section>
+</div>

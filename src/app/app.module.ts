@@ -11,6 +11,7 @@ import { IosContextMenuComponent } from './ios-context-menu/ios-context-menu.com
 import { LookupComponent } from './lookup/lookup.component';
 import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-n
     CheckboxModalComponent,
     InnerModalComponent,
     LookupComponent,
+    TabsComponent,
   ],
   imports: [
     BrowserModule,
