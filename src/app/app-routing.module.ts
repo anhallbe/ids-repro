@@ -8,6 +8,7 @@ import { LookupComponent } from './lookup/lookup.component';
 import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
 
 const routes: Routes = [
   { path: 'ios-context-menu', component: IosContextMenuComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'checkbox-modal', component: CheckboxModalComponent },
   { path: 'lookup', component: LookupComponent },
   { path: 'tabs', component: TabsComponent },
+  { path: 'autocomplete-selected', component: AutoompleteSelectedComponent },
 ];
 
 @NgModule({

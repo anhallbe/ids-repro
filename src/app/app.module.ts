@@ -12,6 +12,7 @@ import { LookupComponent } from './lookup/lookup.component';
 import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { TabsComponent } from './tabs/tabs.component';
     InnerModalComponent,
     LookupComponent,
     TabsComponent,
+    AutoompleteSelectedComponent,
   ],
   imports: [
     BrowserModule,
