@@ -13,6 +13,7 @@ import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
+import { NestedAboutComponent } from './nested-about/nested-about.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete
     LookupComponent,
     TabsComponent,
     AutoompleteSelectedComponent,
+    NestedAboutComponent,
   ],
   imports: [
     BrowserModule,

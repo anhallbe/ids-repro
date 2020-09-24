@@ -9,6 +9,7 @@ import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
+import { NestedAboutComponent } from './nested-about/nested-about.component';
 
 const routes: Routes = [
   { path: 'ios-context-menu', component: IosContextMenuComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'lookup', component: LookupComponent },
   { path: 'tabs', component: TabsComponent },
   { path: 'autocomplete-selected', component: AutoompleteSelectedComponent },
+  { path: 'nested-about', component: NestedAboutComponent },
 ];
 
 @NgModule({

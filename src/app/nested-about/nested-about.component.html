@@ -1,0 +1,16 @@
+<div class="row">
+    <section class="six columns">
+        <p>
+            When a nested dialog is opened from the About dialog, it is no longer possible to close the About dialog using the "X" button. To test:
+        </p>
+        <ol>
+            <li>1. Click "About" to open the dialog</li>
+            <li>2. Click "OPEN NESTED" inside the dialog to open a nested dialog.</li>
+            <li>3. Close the nested dialog</li>
+            <li>4. At this point, the "X" button in the About dialog does nothing. The only way to close the dialog is by pressing the Esc key.</li>
+        </ol>
+    </section>
+</div>
+<div class="row">
+    <button soho-button="primary" (click)="openAbout()">About</button>
+</div>
