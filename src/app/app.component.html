@@ -1,5 +1,5 @@
-<soho-icons></soho-icons>
-<soho-icons-empty></soho-icons-empty>
+<soho-icons-new></soho-icons-new>
+<soho-icons-empty-new></soho-icons-empty-new>
 
 <soho-header>
     <soho-toolbar-flex>
@@ -7,7 +7,7 @@
         <soho-toolbar-flex-section [isTitle]="true">
             <h2 soho-toolbar-flex-page-title>IDS Repro</h2>
         </soho-toolbar-flex-section>
-        <soho-toolbar-flex-section [isButtonSet]="true">
+        <soho-toolbar-flex-section>
             <a href="https://github.com/anhallbe/ids-repro" target="_blank" rel="noopener noreferrer">
                 <img src="/assets/github.png" alt="asd" height="32" width="32" />
             </a>
@@ -15,16 +15,18 @@
     </soho-toolbar-flex>
 </soho-header>
 <nav soho-application-menu [openOnLarge]="true" [dismissOnClickMobile]="true">
-    <div class="accordion-header"><a routerLink="ios-context-menu">iOS Context Menu</a></div>
-    <div class="accordion-header"><a routerLink="nested-busy">Nested Busy</a></div>
-    <div class="accordion-header"><a routerLink="accordion-focus">Accordion Focus</a></div>
-    <div class="accordion-header"><a routerLink="autocomplete-xss">Autocomplete XSS</a></div>
-    <div class="accordion-header"><a routerLink="popupmenu-navigation">Popupmenu Navigation</a></div>
-    <div class="accordion-header"><a routerLink="checkbox-modal">Checkbox Modal</a></div>
-    <div class="accordion-header"><a routerLink="lookup">Lookup</a></div>
-    <div class="accordion-header"><a routerLink="tabs">Tabs</a></div>
-    <div class="accordion-header"><a routerLink="autocomplete-selected">Autocomplete Selected</a></div>
-    <div class="accordion-header"><a routerLink="nested-about">Nested About</a></div>
+    <div class="accordion panel inverse">
+        <div class="accordion-header"><a routerLink="ios-context-menu">iOS Context Menu</a></div>
+        <div class="accordion-header"><a routerLink="nested-busy">Nested Busy</a></div>
+        <div class="accordion-header"><a routerLink="accordion-focus">Accordion Focus</a></div>
+        <div class="accordion-header"><a routerLink="autocomplete-xss">Autocomplete XSS</a></div>
+        <div class="accordion-header"><a routerLink="popupmenu-navigation">Popupmenu Navigation</a></div>
+        <div class="accordion-header"><a routerLink="checkbox-modal">Checkbox Modal</a></div>
+        <div class="accordion-header"><a routerLink="lookup">Lookup</a></div>
+        <div class="accordion-header"><a routerLink="tabs">Tabs</a></div>
+        <div class="accordion-header"><a routerLink="autocomplete-selected">Autocomplete Selected</a></div>
+        <div class="accordion-header"><a routerLink="nested-about">Nested About</a></div>
+    </div>
 </nav>
 <div class="page-container no-scroll">
     <div id="maincontent" class="page-container scrollable" role="main">
