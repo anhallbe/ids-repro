@@ -14,6 +14,7 @@ import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-n
 import { TabsComponent } from './tabs/tabs.component';
 import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
 import { NestedAboutComponent } from './nested-about/nested-about.component';
+import { PersonalizeMenuComponent } from './personalize-menu/personalize-menu.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { NestedAboutComponent } from './nested-about/nested-about.component';
     TabsComponent,
     AutoompleteSelectedComponent,
     NestedAboutComponent,
+    PersonalizeMenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,7 @@ import { NestedAboutComponent } from './nested-about/nested-about.component';
       provide: APP_INITIALIZER,
       useFactory: () => () => {
         Soho.Locale.culturesPath = '/assets/ids-enterprise/js/cultures/';
-        Soho.Locale.set('en-US');
+        return Soho.Locale.set('en-US').catch(err => console.error(`Failed to set locale`, err));
       },
       multi: true,
     }
