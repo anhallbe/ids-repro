@@ -15,6 +15,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
 import { NestedAboutComponent } from './nested-about/nested-about.component';
 import { PersonalizeMenuComponent } from './personalize-menu/personalize-menu.component';
+import { LookupDisabledComponent } from './lookup-disabled/lookup-disabled.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { PersonalizeMenuComponent } from './personalize-menu/personalize-menu.co
     AutoompleteSelectedComponent,
     NestedAboutComponent,
     PersonalizeMenuComponent,
+    LookupDisabledComponent,
   ],
   imports: [
     BrowserModule,

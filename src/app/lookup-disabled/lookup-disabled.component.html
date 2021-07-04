@@ -1,0 +1,28 @@
+<div class="row">
+    <section class="six columns">
+        <p>
+            A lookup that is initially disabled cannot be enabled. The wrapper still has the is-disabled class, and the
+            button has the disabled attribute. So nothing happens when clicking it, even though it is enabled.
+        </p>
+    </section>
+</div>
+<div class="row">
+    <section class="twelve columns">
+        <div class="field">
+            <label soho-label for="the-disabled-lookup">Initially Disabled Lookup</label>
+            <input soho-lookup id="the-disabled-lookup" [isDisabled]="disabled">
+        </div>
+        <div class="field">
+            <label soho-label for="the-flipped-lookup">Inverted (Initially Enabled) Lookup</label>
+            <input soho-lookup id="the-flipped-lookup" [isDisabled]="!disabled">
+        </div>
+    </section>
+</div>
+<div class="row">
+    <section class="twelve columns">
+        <button soho-button="primary" (click)="disabled = !disabled">{{disabled && 'Enable' || 'Disable'}}</button>
+        <p>
+            Disabled: {{disabled}}
+        </p>
+    </section>
+</div>
