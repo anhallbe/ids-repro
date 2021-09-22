@@ -10,7 +10,7 @@ import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-n
 import { TabsComponent } from './tabs/tabs.component';
 import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
 import { NestedAboutComponent } from './nested-about/nested-about.component';
-import { LookupDisabledComponent } from './lookup-disabled/lookup-disabled.component';
+import { LookupSourceComponent } from './lookup-source/lookup-source.component';
 
 const routes: Routes = [
   { path: 'ios-context-menu', component: IosContextMenuComponent },
@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'tabs', component: TabsComponent },
   { path: 'autocomplete-selected', component: AutoompleteSelectedComponent },
   { path: 'nested-about', component: NestedAboutComponent },
-  { path: 'lookup-disabled', component: LookupDisabledComponent },
+  { path: 'lookup-source', component: LookupSourceComponent },
 ];
 
 @NgModule({
