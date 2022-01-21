@@ -16,6 +16,7 @@ import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete
 import { NestedAboutComponent } from './nested-about/nested-about.component';
 import { PersonalizeMenuComponent } from './personalize-menu/personalize-menu.component';
 import { LookupSourceComponent } from './lookup-source/lookup-source.component';
+import { HomepageEditingComponent } from './homepage-editing/homepage-editing.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { LookupSourceComponent } from './lookup-source/lookup-source.component';
     NestedAboutComponent,
     PersonalizeMenuComponent,
     LookupSourceComponent,
+    HomepageEditingComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,15 +2,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccordionFocusComponent } from './accordion-focus/accordion-focus.component';
 import { AutocompleteXssComponent } from './autocomplete-xss/autocomplete-xss.component';
+import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
 import { CheckboxModalComponent } from './checkbox-modal/checkbox-modal.component';
+import { HomepageEditingComponent } from './homepage-editing/homepage-editing.component';
 import { IosContextMenuComponent } from './ios-context-menu/ios-context-menu.component';
+import { LookupSourceComponent } from './lookup-source/lookup-source.component';
 import { LookupComponent } from './lookup/lookup.component';
+import { NestedAboutComponent } from './nested-about/nested-about.component';
 import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
 import { TabsComponent } from './tabs/tabs.component';
-import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
-import { NestedAboutComponent } from './nested-about/nested-about.component';
-import { LookupSourceComponent } from './lookup-source/lookup-source.component';
 
 const routes: Routes = [
   { path: 'ios-context-menu', component: IosContextMenuComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'autocomplete-selected', component: AutoompleteSelectedComponent },
   { path: 'nested-about', component: NestedAboutComponent },
   { path: 'lookup-source', component: LookupSourceComponent },
+  { path: 'homepage-editing', component: HomepageEditingComponent },
 ];
 
 @NgModule({
