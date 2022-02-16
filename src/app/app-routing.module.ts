@@ -12,6 +12,7 @@ import { LookupComponent } from './lookup/lookup.component';
 import { NestedAboutComponent } from './nested-about/nested-about.component';
 import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
+import { SearchfieldUpdatedComponent } from './searchfield-updated/searchfield-updated.component';
 import { TabsComponent } from './tabs/tabs.component';
 
 const routes: Routes = [
@@ -27,7 +28,8 @@ const routes: Routes = [
   { path: 'nested-about', component: NestedAboutComponent },
   { path: 'lookup-source', component: LookupSourceComponent },
   { path: 'homepage-editing', component: HomepageEditingComponent },
-  { path: 'double-text-editor', component: DoubleTextEditorComponent }
+  { path: 'double-text-editor', component: DoubleTextEditorComponent },
+  { path: 'searchfield-updated', component: SearchfieldUpdatedComponent }
 ];
 
 @NgModule({

@@ -18,6 +18,7 @@ import { PersonalizeMenuComponent } from './personalize-menu/personalize-menu.co
 import { LookupSourceComponent } from './lookup-source/lookup-source.component';
 import { HomepageEditingComponent } from './homepage-editing/homepage-editing.component';
 import { DoubleTextEditorComponent } from './double-text-editor/double-text-editor.component';
+import { SearchfieldUpdatedComponent } from './searchfield-updated/searchfield-updated.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { DoubleTextEditorComponent } from './double-text-editor/double-text-edit
     LookupSourceComponent,
     HomepageEditingComponent,
     DoubleTextEditorComponent,
+    SearchfieldUpdatedComponent,
   ],
   imports: [
     BrowserModule,
