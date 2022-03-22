@@ -1,0 +1,31 @@
+<div class="field" style="margin: 10px;">
+    <input type="radio" soho-radiobutton [(ngModel)]="optionActivated" id="radio-123" name="radio-123" />
+    <label soho-label for="radio-123" [forRadioButton]="true">
+        <div class="vertical-adjust">
+            Add
+            <select style="width: 10vw;" soho-dropdown name="first-dropdown"
+                [attributes]="{ name: 'id', value: 'first-dropdown' }" [(ngModel)]="firstSelection">
+                <option [value]="1">One</option>
+                <option [value]="2">Two</option>
+                <option [value]="3">Three</option>
+                <option [value]="4">Four</option>
+                <option [value]="5">Five</option>
+            </select>
+            with
+            <select style="width: 10vw;" soho-dropdown name="second-dropdown"
+                [attributes]="{ name: 'id', value: 'second-dropdown' }" [(ngModel)]="secondSelection">
+                <option [value]="1">One</option>
+                <option [value]="2">Two</option>
+                <option [value]="3">Three</option>
+                <option [value]="4">Four</option>
+                <option [value]="5">Five</option>
+            </select>
+            and multiply with
+            <input style="width: 10vw;" type="number" soho-input [(ngModel)]="multiplier" />
+        </div>
+    </label>
+</div>
+<div class="field" style="margin: 10px;">
+    <button soho-button="primary" (click)="calculate()">Calculate result</button>
+    <p style="padding: 20px;">{{ "Result: " + result }}</p>
+</div>

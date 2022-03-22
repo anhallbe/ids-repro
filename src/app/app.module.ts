@@ -19,6 +19,7 @@ import { LookupSourceComponent } from './lookup-source/lookup-source.component';
 import { HomepageEditingComponent } from './homepage-editing/homepage-editing.component';
 import { DoubleTextEditorComponent } from './double-text-editor/double-text-editor.component';
 import { SearchfieldUpdatedComponent } from './searchfield-updated/searchfield-updated.component';
+import { QuickMathsComponent } from './double-dropdown/quick-maths.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { SearchfieldUpdatedComponent } from './searchfield-updated/searchfield-u
     HomepageEditingComponent,
     DoubleTextEditorComponent,
     SearchfieldUpdatedComponent,
+    QuickMathsComponent
   ],
   imports: [
     BrowserModule,
