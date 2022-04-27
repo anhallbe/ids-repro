@@ -13,6 +13,7 @@ import { LookupComponent } from './lookup/lookup.component';
 import { NestedAboutComponent } from './nested-about/nested-about.component';
 import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
+import { PopupmenuOverlappingComponent } from './popupmenu-overlapping/popupmenu-overlapping.component';
 import { SearchfieldUpdatedComponent } from './searchfield-updated/searchfield-updated.component';
 import { TabsComponent } from './tabs/tabs.component';
 
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'homepage-editing', component: HomepageEditingComponent },
   { path: 'double-text-editor', component: DoubleTextEditorComponent },
   { path: 'searchfield-updated', component: SearchfieldUpdatedComponent },
-  { path: 'quick-maths', component: QuickMathsComponent }
+  { path: 'quick-maths', component: QuickMathsComponent, },
+  { path: 'popupmenu-overlapping', component: PopupmenuOverlappingComponent }
 ];
 
 @NgModule({

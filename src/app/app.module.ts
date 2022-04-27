@@ -20,6 +20,7 @@ import { HomepageEditingComponent } from './homepage-editing/homepage-editing.co
 import { DoubleTextEditorComponent } from './double-text-editor/double-text-editor.component';
 import { SearchfieldUpdatedComponent } from './searchfield-updated/searchfield-updated.component';
 import { QuickMathsComponent } from './double-dropdown/quick-maths.component';
+import { PopupmenuOverlappingComponent } from './popupmenu-overlapping/popupmenu-overlapping.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { QuickMathsComponent } from './double-dropdown/quick-maths.component';
     HomepageEditingComponent,
     DoubleTextEditorComponent,
     SearchfieldUpdatedComponent,
-    QuickMathsComponent
+    QuickMathsComponent,
+    PopupmenuOverlappingComponent
   ],
   imports: [
     BrowserModule,
