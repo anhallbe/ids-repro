@@ -21,6 +21,8 @@ import { DoubleTextEditorComponent } from './double-text-editor/double-text-edit
 import { SearchfieldUpdatedComponent } from './searchfield-updated/searchfield-updated.component';
 import { QuickMathsComponent } from './double-dropdown/quick-maths.component';
 import { PopupmenuOverlappingComponent } from './popupmenu-overlapping/popupmenu-overlapping.component';
+import { StickyDropdownMenuComponent } from './sticky-dropdown-menu/sticky-dropdown-menu.component';
+import { ExampleModalComponent } from './sticky-dropdown-menu/example-modal.component';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { PopupmenuOverlappingComponent } from './popupmenu-overlapping/popupmenu
     DoubleTextEditorComponent,
     SearchfieldUpdatedComponent,
     QuickMathsComponent,
-    PopupmenuOverlappingComponent
+    PopupmenuOverlappingComponent,
+    StickyDropdownMenuComponent,
+    ExampleModalComponent
   ],
   imports: [
     BrowserModule,

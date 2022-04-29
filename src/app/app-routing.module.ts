@@ -15,6 +15,7 @@ import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
 import { PopupmenuOverlappingComponent } from './popupmenu-overlapping/popupmenu-overlapping.component';
 import { SearchfieldUpdatedComponent } from './searchfield-updated/searchfield-updated.component';
+import { StickyDropdownMenuComponent } from './sticky-dropdown-menu/sticky-dropdown-menu.component';
 import { TabsComponent } from './tabs/tabs.component';
 
 const routes: Routes = [
@@ -33,7 +34,8 @@ const routes: Routes = [
   { path: 'double-text-editor', component: DoubleTextEditorComponent },
   { path: 'searchfield-updated', component: SearchfieldUpdatedComponent },
   { path: 'quick-maths', component: QuickMathsComponent, },
-  { path: 'popupmenu-overlapping', component: PopupmenuOverlappingComponent }
+  { path: 'popupmenu-overlapping', component: PopupmenuOverlappingComponent },
+  { path: 'sticky-dropdown-menu', component: StickyDropdownMenuComponent }
 ];
 
 @NgModule({
