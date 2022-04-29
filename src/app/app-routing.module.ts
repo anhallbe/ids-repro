@@ -4,6 +4,8 @@ import { AccordionFocusComponent } from './accordion-focus/accordion-focus.compo
 import { AutocompleteXssComponent } from './autocomplete-xss/autocomplete-xss.component';
 import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
 import { CheckboxModalComponent } from './checkbox-modal/checkbox-modal.component';
+import { QuickMathsComponent } from './double-dropdown/quick-maths.component';
+import { DoubleTextEditorComponent } from './double-text-editor/double-text-editor.component';
 import { HomepageEditingComponent } from './homepage-editing/homepage-editing.component';
 import { IosContextMenuComponent } from './ios-context-menu/ios-context-menu.component';
 import { LookupSourceComponent } from './lookup-source/lookup-source.component';
@@ -11,6 +13,9 @@ import { LookupComponent } from './lookup/lookup.component';
 import { NestedAboutComponent } from './nested-about/nested-about.component';
 import { NestedBusyComponent } from './nested-busy/nested-busy.component';
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
+import { PopupmenuOverlappingComponent } from './popupmenu-overlapping/popupmenu-overlapping.component';
+import { SearchfieldUpdatedComponent } from './searchfield-updated/searchfield-updated.component';
+import { StickyDropdownMenuComponent } from './sticky-dropdown-menu/sticky-dropdown-menu.component';
 import { TabsComponent } from './tabs/tabs.component';
 
 const routes: Routes = [
@@ -26,6 +31,11 @@ const routes: Routes = [
   { path: 'nested-about', component: NestedAboutComponent },
   { path: 'lookup-source', component: LookupSourceComponent },
   { path: 'homepage-editing', component: HomepageEditingComponent },
+  { path: 'double-text-editor', component: DoubleTextEditorComponent },
+  { path: 'searchfield-updated', component: SearchfieldUpdatedComponent },
+  { path: 'quick-maths', component: QuickMathsComponent, },
+  { path: 'popupmenu-overlapping', component: PopupmenuOverlappingComponent },
+  { path: 'sticky-dropdown-menu', component: StickyDropdownMenuComponent }
 ];
 
 @NgModule({

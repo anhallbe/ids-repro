@@ -1,0 +1,32 @@
+<div soho-homepage>
+    <div soho-widget>
+        <div soho-widget-header>
+            <h1 soho-widget-title>Widget</h1>
+        </div>
+        <div soho-widget-content style="background-color: rgb(185, 222, 252);">
+            <div [menu]="inforMenuId" soho-context-menu style="height: 100%;">
+                <ul [id]="123">
+                    <li soho-context-menu (mousedown)="setActiveItem($event)" (click)="openLink()" [menu]="whaleMenuId"
+                        style="cursor: pointer; border: 1px solid black" (beforeopen)="setActiveItem($event)"
+                        [id]="whale.id" *ngFor="let whale of coolWhales">
+                        <p>{{whale.name}}</p>
+                    </li>
+                </ul>
+            </div>
+            <ul soho-popupmenu [id]="inforMenuId">
+                <li [id]="infor.id" (mousedown)="setActiveItem($event)" (click)="openLink()" soho-popupmenu-item
+                    *ngFor="let infor of infors">
+                    <a>{{infor.name}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <ul soho-popupmenu [id]="whaleMenuId">
+        <li soho-popupmenu-item>
+            <a (click)="admireWhale()" name="lm-menuw-context-edit">Admire whale</a>
+        </li>
+        <li soho-popupmenu-item>
+            <a (click)="deleteWhale()" name="lm-menuw-context-edit">Remove whale</a>
+        </li>
+    </ul>
+</div>

@@ -17,6 +17,12 @@ import { NestedAboutComponent } from './nested-about/nested-about.component';
 import { PersonalizeMenuComponent } from './personalize-menu/personalize-menu.component';
 import { LookupSourceComponent } from './lookup-source/lookup-source.component';
 import { HomepageEditingComponent } from './homepage-editing/homepage-editing.component';
+import { DoubleTextEditorComponent } from './double-text-editor/double-text-editor.component';
+import { SearchfieldUpdatedComponent } from './searchfield-updated/searchfield-updated.component';
+import { QuickMathsComponent } from './double-dropdown/quick-maths.component';
+import { PopupmenuOverlappingComponent } from './popupmenu-overlapping/popupmenu-overlapping.component';
+import { StickyDropdownMenuComponent } from './sticky-dropdown-menu/sticky-dropdown-menu.component';
+import { ExampleModalComponent } from './sticky-dropdown-menu/example-modal.component';
 
 
 @NgModule({
@@ -36,6 +42,12 @@ import { HomepageEditingComponent } from './homepage-editing/homepage-editing.co
     PersonalizeMenuComponent,
     LookupSourceComponent,
     HomepageEditingComponent,
+    DoubleTextEditorComponent,
+    SearchfieldUpdatedComponent,
+    QuickMathsComponent,
+    PopupmenuOverlappingComponent,
+    StickyDropdownMenuComponent,
+    ExampleModalComponent
   ],
   imports: [
     BrowserModule,

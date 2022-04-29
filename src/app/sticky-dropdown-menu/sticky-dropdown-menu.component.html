@@ -1,0 +1,27 @@
+<div soho-homepage>
+    <div soho-widget>
+        <div soho-widget-header>
+            <h1 soho-widget-title>Widget</h1>
+        </div>
+        <div soho-widget-content style="background-color: rgb(185, 222, 252);">
+            <div class="row"></div>
+            <button soho-button="primary" (click)="openModal()">Open the modal</button>
+            <button soho-button="secondary">Click me after opening the menu</button>
+            <div class="row"></div>
+            <button soho-menu-button [menu]="outsideMenuId" icon="caret-down" soho-tooltip title="Open menu">
+                Open menu
+            </button>
+            <ul soho-popupmenu [isSelectable]="false" [id]="outsideMenuId">
+                <li soho-popupmenu-item>
+                    <a soho-popupmenu-label>Option 1</a>
+                </li>
+                <li soho-popupmenu-item>
+                    <a soho-popupmenu-label>Option 2</a>
+                </li>
+                <li soho-popupmenu-item>
+                    <a soho-popupmenu-label>Option 3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

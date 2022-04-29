@@ -1,0 +1,21 @@
+<div class=""> <button soho-button="secondary">Click me after opening the menu</button>
+    <div class="row">
+      <button soho-menu-button [menu]="insideMenuId" icon="caret-down" soho-tooltip
+        title="Open menu">
+        Open menu
+      </button>
+    </div>
+    <div class="row">
+        <ul soho-popupmenu [id]="insideMenuId">
+          <li soho-popupmenu-item>
+            <a soho-popupmenu-label>Option 1</a>
+          </li>
+          <li soho-popupmenu-item>
+            <a soho-popupmenu-label>Option 2</a>
+          </li>
+          <li soho-popupmenu-item>
+            <a soho-popupmenu-label>Option 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
