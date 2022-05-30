@@ -17,6 +17,7 @@ import { NestedAboutComponent } from './nested-about/nested-about.component';
 import { PersonalizeMenuComponent } from './personalize-menu/personalize-menu.component';
 import { LookupSourceComponent } from './lookup-source/lookup-source.component';
 import { HomepageEditingComponent } from './homepage-editing/homepage-editing.component';
+import { PopupmenuToolbarComponent } from './popupmenu-toolbar/popupmenu-toolbar.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { HomepageEditingComponent } from './homepage-editing/homepage-editing.co
     PersonalizeMenuComponent,
     LookupSourceComponent,
     HomepageEditingComponent,
+    PopupmenuToolbarComponent,
   ],
   imports: [
     BrowserModule,
