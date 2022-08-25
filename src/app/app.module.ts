@@ -6,18 +6,20 @@ import { AccordionFocusComponent } from './accordion-focus/accordion-focus.compo
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AutocompleteXssComponent } from './autocomplete-xss/autocomplete-xss.component';
-import { CheckboxModalComponent, InnerModalComponent } from './checkbox-modal/checkbox-modal.component';
-import { IosContextMenuComponent } from './ios-context-menu/ios-context-menu.component';
-import { LookupComponent } from './lookup/lookup.component';
-import { NestedBusyComponent } from './nested-busy/nested-busy.component';
-import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
-import { TabsComponent } from './tabs/tabs.component';
 import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
-import { NestedAboutComponent } from './nested-about/nested-about.component';
-import { PersonalizeMenuComponent } from './personalize-menu/personalize-menu.component';
-import { LookupSourceComponent } from './lookup-source/lookup-source.component';
+import { CheckboxModalComponent, InnerModalComponent } from './checkbox-modal/checkbox-modal.component';
+import { DatagridDialogComponent } from './datagrid-dialog/datagrid-dialog.component';
+import { DialogComponent } from './datagrid-dialog/dialog/dialog.component';
 import { HomepageEditingComponent } from './homepage-editing/homepage-editing.component';
+import { IosContextMenuComponent } from './ios-context-menu/ios-context-menu.component';
+import { LookupSourceComponent } from './lookup-source/lookup-source.component';
+import { LookupComponent } from './lookup/lookup.component';
+import { NestedAboutComponent } from './nested-about/nested-about.component';
+import { NestedBusyComponent } from './nested-busy/nested-busy.component';
+import { PersonalizeMenuComponent } from './personalize-menu/personalize-menu.component';
+import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
 import { PopupmenuToolbarComponent } from './popupmenu-toolbar/popupmenu-toolbar.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 @NgModule({
@@ -38,6 +40,8 @@ import { PopupmenuToolbarComponent } from './popupmenu-toolbar/popupmenu-toolbar
     LookupSourceComponent,
     HomepageEditingComponent,
     PopupmenuToolbarComponent,
+    DatagridDialogComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { AccordionFocusComponent } from './accordion-focus/accordion-focus.compo
 import { AutocompleteXssComponent } from './autocomplete-xss/autocomplete-xss.component';
 import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
 import { CheckboxModalComponent } from './checkbox-modal/checkbox-modal.component';
+import { DatagridDialogComponent } from './datagrid-dialog/datagrid-dialog.component';
 import { HomepageEditingComponent } from './homepage-editing/homepage-editing.component';
 import { IosContextMenuComponent } from './ios-context-menu/ios-context-menu.component';
 import { LookupSourceComponent } from './lookup-source/lookup-source.component';
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'lookup-source', component: LookupSourceComponent },
   { path: 'homepage-editing', component: HomepageEditingComponent },
   { path: 'popupmenu-toolbar', component: PopupmenuToolbarComponent },
+  { path: 'datagrid-dialog', component: DatagridDialogComponent },
 ];
 
 @NgModule({
