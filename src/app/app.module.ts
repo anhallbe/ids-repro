@@ -20,6 +20,7 @@ import { PersonalizeMenuComponent } from './personalize-menu/personalize-menu.co
 import { PopupmenuNavigationComponent } from './popupmenu-navigation/popupmenu-navigation.component';
 import { PopupmenuToolbarComponent } from './popupmenu-toolbar/popupmenu-toolbar.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { DatagridShortComponent } from './datagrid-short/datagrid-short.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { TabsComponent } from './tabs/tabs.component';
     PopupmenuToolbarComponent,
     DatagridDialogComponent,
     DialogComponent,
+    DatagridShortComponent,
   ],
   imports: [
     BrowserModule,

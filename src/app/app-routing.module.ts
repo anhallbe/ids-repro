@@ -5,6 +5,7 @@ import { AutocompleteXssComponent } from './autocomplete-xss/autocomplete-xss.co
 import { AutoompleteSelectedComponent } from './autoomplete-selected/autoomplete-selected.component';
 import { CheckboxModalComponent } from './checkbox-modal/checkbox-modal.component';
 import { DatagridDialogComponent } from './datagrid-dialog/datagrid-dialog.component';
+import { DatagridShortComponent } from './datagrid-short/datagrid-short.component';
 import { HomepageEditingComponent } from './homepage-editing/homepage-editing.component';
 import { IosContextMenuComponent } from './ios-context-menu/ios-context-menu.component';
 import { LookupSourceComponent } from './lookup-source/lookup-source.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'homepage-editing', component: HomepageEditingComponent },
   { path: 'popupmenu-toolbar', component: PopupmenuToolbarComponent },
   { path: 'datagrid-dialog', component: DatagridDialogComponent },
+  { path: 'datagrid-short', component: DatagridShortComponent },
 ];
 
 @NgModule({
