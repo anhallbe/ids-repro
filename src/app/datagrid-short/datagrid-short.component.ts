@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { SohoDataGridComponent } from 'ids-enterprise-ng';
 
 @Component({
   selector: 'app-datagrid-short',
@@ -7,7 +8,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatagridShortComponent implements OnInit {
 
-  gridOptions: SohoDataGridOptions;
+  @ViewChild(SohoDataGridComponent) grid: SohoDataGridComponent;
+
+  gridOptions: SohoDataGridOptions = {
+    columns: [
+      {
+        name: "Name",
+        field: "name",
+      },
+      {
+        name: "Description",
+        field: "description",
+      },
+    ],
+    dataset: [
+      {
+        name: "Name 1",
+        description: "Description 1",
+      },
+      {
+        name: "Name 2",
+        description: "Description 2",
+      },
+      {
+        name: "Name 3",
+        description: "Description 3",
+      },
+    ],
+  };
 
   constructor() { }
 
@@ -15,32 +43,7 @@ export class DatagridShortComponent implements OnInit {
   }
 
   applyOptions() {
-    this.gridOptions = {
-      rowHeight: "short",
-      columns: [
-        {
-          name: "Name",
-          field: "name",
-        },
-        {
-          name: "Description",
-          field: "description",
-        },
-      ],
-      dataset: [
-        {
-          name: "Name 1",
-          description: "Description 1",
-        },
-        {
-          name: "Name 2",
-          description: "Description 2",
-        },
-        {
-          name: "Name 3",
-          description: "Description 3",
-        },
-      ],
-    };
+    this.gridOptions.rowHeight = "short";
+    this.grid.updated();
   }
 }

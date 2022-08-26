@@ -1,7 +1,7 @@
 <p>
-    When the datagrid options is set after the grid has been created, the "rowHeight" option does not apply.
+    When the datagrid "rowHeight" option is set after the grid has been created, the grid is not updated.
 </p>
 <section>
-    <button soho-button="primary" (click)="applyOptions()">Apply Options</button>
+    <button soho-button="primary" (click)="applyOptions()">Apply rowHeight: "short"</button>
 </section>
 <div soho-datagrid="auto" [gridOptions]="gridOptions">
