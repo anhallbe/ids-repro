@@ -1,14 +1,22 @@
 <p>
-    Clicking the popupmenu item below will <em>sometimes</em> cause a navigation event. Clicking the item will hide it
-    for 1 second before showing it again (for easier testing).
+  Clicking the popupmenu item below will <em>sometimes</em> cause a navigation
+  event. Clicking the item will hide it for 1 second before showing it again
+  (for easier testing).
 </p>
 
-<button soho-context-menu soho-button="icon" icon="more" trigger="click" menu="menu"></button>
+<button
+  soho-context-menu
+  soho-button="icon"
+  icon="more"
+  trigger="click"
+  menu="menu"></button>
 <ul soho-popupmenu id="menu">
-    <li soho-popupmenu-item *ngIf="showItem">
-        <a soho-popupmenu-label (click)="hideItem()">This item will cause navigation</a>
-    </li>
-    <li soho-popupmenu-item [class.hidden]="!showItem">
-        <a soho-popupmenu-label (click)="hideItem()">...but this will not</a>
-    </li>
+  <li soho-popupmenu-item *ngIf="showItem">
+    <a soho-popupmenu-label (click)="hideItem()"
+      >This item will cause navigation</a
+    >
+  </li>
+  <li soho-popupmenu-item [class.hidden]="!showItem">
+    <a soho-popupmenu-label (click)="hideItem()">...but this will not</a>
+  </li>
 </ul>

@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-lookup-source',
-  templateUrl: './lookup-source.component.html',
-  styleUrls: ['./lookup-source.component.css']
+  selector: "app-lookup-source",
+  templateUrl: "./lookup-source.component.html",
+  styleUrls: ["./lookup-source.component.css"],
 })
 export class LookupSourceComponent {
-
   model = ["first", "third"];
   columns: SohoDataGridColumn[] = [
     {
@@ -14,7 +13,7 @@ export class LookupSourceComponent {
       name: "Product Id",
       field: "productId",
       width: 140,
-      formatter: Soho.Formatters.Readonly
+      formatter: Soho.Formatters.Readonly,
     },
     {
       id: "productName",
@@ -41,14 +40,14 @@ export class LookupSourceComponent {
       name: "Price",
       field: "price",
       width: 125,
-      formatter: Soho.Formatters.Decimal
+      formatter: Soho.Formatters.Decimal,
     },
     {
       id: "orderDate",
       name: "Order Date",
       field: "orderDate",
       formatter: Soho.Formatters.Date,
-      dateFormat: "M/d/yyyy"
+      dateFormat: "M/d/yyyy",
     },
   ];
 
@@ -63,7 +62,8 @@ export class LookupSourceComponent {
       status: "OK",
       orderDate: new Date(2014, 12, 8),
       action: "Action",
-    }, {
+    },
+    {
       id: 2,
       productId: "second",
       productName: "Different Compressor",
@@ -73,7 +73,8 @@ export class LookupSourceComponent {
       status: "",
       orderDate: new Date(2015, 7, 3),
       action: "On Hold",
-    }, {
+    },
+    {
       id: 3,
       productId: "third",
       productName: "Compressor",
@@ -83,7 +84,8 @@ export class LookupSourceComponent {
       status: "",
       orderDate: new Date(2014, 6, 3),
       action: "Action",
-    }, {
+    },
+    {
       id: 4,
       productId: "fourth",
       productName: "Another Compressor",
@@ -93,7 +95,8 @@ export class LookupSourceComponent {
       status: "OK",
       orderDate: new Date(2015, 3, 3),
       action: "Action",
-    }, {
+    },
+    {
       id: 5,
       productId: "fifth",
       productName: "I Love Compressors",
@@ -103,7 +106,8 @@ export class LookupSourceComponent {
       status: "OK",
       orderDate: new Date(2015, 5, 5),
       action: "On Hold",
-    }, {
+    },
+    {
       id: 5,
       productId: "sixth",
       productName: "Air Compressors",
@@ -113,7 +117,8 @@ export class LookupSourceComponent {
       status: "OK",
       orderDate: new Date(2014, 6, 9),
       action: "On Hold",
-    }, {
+    },
+    {
       id: 6,
       productId: "seventh",
       productName: "Some Compressor",
@@ -128,7 +133,7 @@ export class LookupSourceComponent {
 
   source: SohoDataGridSourceFunction = (request, response): void => {
     response(this.dataset, request);
-  }
+  };
 }
 
 interface Order {

@@ -1,8 +1,8 @@
 @media (min-width: 767px) {
-    nav {
-        top: 60px;
-    }
+  nav {
+    top: 60px;
+  }
 }
 .accordion-header {
-    border: none;
+  border: none;
 }

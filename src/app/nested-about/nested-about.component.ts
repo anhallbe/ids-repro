@@ -1,14 +1,16 @@
-import { Component } from '@angular/core';
-import { SohoAboutService, SohoModalDialogService } from 'ids-enterprise-ng';
+import { Component } from "@angular/core";
+import { SohoAboutService, SohoModalDialogService } from "ids-enterprise-ng";
 
 @Component({
-  selector: 'app-nested-about',
-  templateUrl: './nested-about.component.html',
-  styleUrls: ['./nested-about.component.css']
+  selector: "app-nested-about",
+  templateUrl: "./nested-about.component.html",
+  styleUrls: ["./nested-about.component.css"],
 })
 export class NestedAboutComponent {
-
-  constructor(private aboutService: SohoAboutService, private modalService: SohoModalDialogService) { }
+  constructor(
+    private aboutService: SohoAboutService,
+    private modalService: SohoModalDialogService,
+  ) {}
 
   openAbout() {
     const content = `
@@ -17,18 +19,21 @@ export class NestedAboutComponent {
       </div>`;
     this.aboutService
       .about()
-      .appName('AppName')
-      .productName('ProductName')
-      .version('1.0')
+      .appName("AppName")
+      .productName("ProductName")
+      .version("1.0")
       .content(content)
       .open();
 
-    document.getElementById('nestedAboutDialogButton').onclick = () => {
-      this.modalService.message('').options({
-        content: 'This is a nested dialog',
-        showCloseBtn: true,
-        title: 'Nested Dialog',
-      }).open();
+    document.getElementById("nestedAboutDialogButton").onclick = () => {
+      this.modalService
+        .message("")
+        .options({
+          content: "This is a nested dialog",
+          showCloseBtn: true,
+          title: "Nested Dialog",
+        })
+        .open();
     };
   }
 }

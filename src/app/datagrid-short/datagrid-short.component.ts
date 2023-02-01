@@ -1,13 +1,12 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { SohoDataGridComponent } from 'ids-enterprise-ng';
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { SohoDataGridComponent } from "ids-enterprise-ng";
 
 @Component({
-  selector: 'app-datagrid-short',
-  templateUrl: './datagrid-short.component.html',
-  styleUrls: ['./datagrid-short.component.css']
+  selector: "app-datagrid-short",
+  templateUrl: "./datagrid-short.component.html",
+  styleUrls: ["./datagrid-short.component.css"],
 })
 export class DatagridShortComponent implements OnInit {
-
   @ViewChild(SohoDataGridComponent) grid: SohoDataGridComponent;
 
   gridOptions: SohoDataGridOptions = {
@@ -37,10 +36,9 @@ export class DatagridShortComponent implements OnInit {
     ],
   };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   applyOptions() {
     this.gridOptions.rowHeight = "short";

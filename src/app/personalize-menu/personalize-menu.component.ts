@@ -1,26 +1,28 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { SohoPersonalizeDirective } from 'ids-enterprise-ng';
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { SohoPersonalizeDirective } from "ids-enterprise-ng";
 
 @Component({
-  selector: 'app-personalize-menu',
-  templateUrl: './personalize-menu.component.html',
-  styleUrls: ['./personalize-menu.component.css']
+  selector: "app-personalize-menu",
+  templateUrl: "./personalize-menu.component.html",
+  styleUrls: ["./personalize-menu.component.css"],
 })
 export class PersonalizeMenuComponent implements OnInit {
-
-  @ViewChild(SohoPersonalizeDirective, { static: true }) personalize: SohoPersonalizeDirective;
+  @ViewChild(SohoPersonalizeDirective, { static: true })
+  personalize: SohoPersonalizeDirective;
   currentTheme: string;
   currentColor: string;
 
   themes: SohoTheme[];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     const defaultColor = this.personalize.personalizationColors().default;
     this.setColor(defaultColor);
 
-    this.themes = this.personalize.themes().filter(theme => theme.name.includes("New"));
+    this.themes = this.personalize
+      .themes()
+      .filter((theme) => theme.name.includes("New"));
     const defaultTheme = this.personalize.currentTheme;
     this.setTheme(defaultTheme);
   }

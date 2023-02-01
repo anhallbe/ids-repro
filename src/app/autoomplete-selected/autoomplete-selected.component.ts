@@ -1,21 +1,15 @@
-import { Component } from '@angular/core';
-import { Observable, interval } from 'rxjs';
-import { startWith, map } from 'rxjs/operators';
+import { Component } from "@angular/core";
+import { Observable, interval } from "rxjs";
+import { startWith, map } from "rxjs/operators";
 
 @Component({
-  selector: 'app-autoomplete-selected',
-  templateUrl: './autoomplete-selected.component.html',
-  styleUrls: ['./autoomplete-selected.component.css']
+  selector: "app-autoomplete-selected",
+  templateUrl: "./autoomplete-selected.component.html",
+  styleUrls: ["./autoomplete-selected.component.css"],
 })
 export class AutoompleteSelectedComponent {
-
   model: string;
-  source: SohoAutoCompleteSource = [
-    'Hello',
-    'World',
-    'Alice',
-    'Bob',
-  ];
+  source: SohoAutoCompleteSource = ["Hello", "World", "Alice", "Bob"];
   secondsSinceLastSelect: Observable<number>;
   template = `<script type="text/html">
   <li id="{{listItemId}}" {{#hasValue}} data-value="{{value}}" {{/hasValue}} role="listitem">
@@ -26,6 +20,9 @@ export class AutoompleteSelectedComponent {
 </script>`;
 
   resetSelectCount() {
-    this.secondsSinceLastSelect = interval(1000).pipe(map(n => n + 1), startWith(0));
+    this.secondsSinceLastSelect = interval(1000).pipe(
+      map((n) => n + 1),
+      startWith(0),
+    );
   }
 }

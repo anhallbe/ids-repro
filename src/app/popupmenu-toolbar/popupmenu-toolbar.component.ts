@@ -1,16 +1,18 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { SohoDataGridComponent } from 'ids-enterprise-ng';
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { SohoDataGridComponent } from "ids-enterprise-ng";
 
 @Component({
-  selector: 'app-popupmenu-toolbar',
-  templateUrl: './popupmenu-toolbar.component.html',
-  styleUrls: ['./popupmenu-toolbar.component.css']
+  selector: "app-popupmenu-toolbar",
+  templateUrl: "./popupmenu-toolbar.component.html",
+  styleUrls: ["./popupmenu-toolbar.component.css"],
 })
 export class PopupmenuToolbarComponent implements OnInit {
-
   @ViewChild(SohoDataGridComponent) datagrid: SohoDataGridComponent;
 
-  source = (request: SohoDataGridSourceRequest, response: SohoDataGridResponseFunction) => { };
+  source = (
+    request: SohoDataGridSourceRequest,
+    response: SohoDataGridResponseFunction,
+  ) => {};
   gridOptions: SohoDataGridOptions = {
     columns: [
       {
@@ -19,9 +21,9 @@ export class PopupmenuToolbarComponent implements OnInit {
         resizable: false,
         sortable: false,
         formatter: Soho.Formatters.SelectionCheckbox,
-        align: "center"
+        align: "center",
       },
-      { field: "product", },
+      { field: "product" },
       { field: "quantity" },
     ],
     selectable: "multiple",
@@ -40,7 +42,6 @@ export class PopupmenuToolbarComponent implements OnInit {
       },
     ],
 
-
     rowHeight: "medium",
     disableRowDeactivation: true,
     clickToSelect: false,
@@ -50,10 +51,9 @@ export class PopupmenuToolbarComponent implements OnInit {
     showNewRowIndicator: false,
     columnSizing: "both",
     source: this.source,
-  }
+  };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }

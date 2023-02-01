@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-popupmenu-navigation',
-  templateUrl: './popupmenu-navigation.component.html',
-  styleUrls: ['./popupmenu-navigation.component.css']
+  selector: "app-popupmenu-navigation",
+  templateUrl: "./popupmenu-navigation.component.html",
+  styleUrls: ["./popupmenu-navigation.component.css"],
 })
 export class PopupmenuNavigationComponent {
   showItem = true;
