@@ -20,9 +20,7 @@ export class PersonalizeMenuComponent implements OnInit {
     const defaultColor = this.personalize.personalizationColors().default;
     this.setColor(defaultColor);
 
-    this.themes = this.personalize
-      .themes()
-      .filter((theme) => theme.name.includes("New"));
+    this.themes = this.personalize.themes();
     const defaultTheme = this.personalize.currentTheme;
     this.setTheme(defaultTheme);
   }

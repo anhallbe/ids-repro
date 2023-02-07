@@ -1,0 +1,35 @@
+<div soho-homepage>
+  <div soho-widget>
+    <div soho-widget-header>
+      <p soho-widget-title>Title</p>
+    </div>
+    <div
+      soho-widget-content
+      soho-busyindicator
+      [activated]="busy"
+      [blockUI]="true">
+      <button soho-button="primary" (click)="makeBusy()">Instant busy</button>
+      <button soho-button="primary" (click)="makeBusy(1)">1 second busy</button>
+      <button soho-button="primary" (click)="makeBusy(2)">2 second busy</button>
+    </div>
+  </div>
+  <div soho-widget>
+    <div soho-widget-header>
+      <p soho-widget-title>Title</p>
+    </div>
+    <div
+      soho-widget-content
+      soho-busyindicator
+      [activated]="busy"
+      [blockUI]="true">
+      <input soho-input [(ngModel)]="query" (ngModelChange)="search()" />
+      <soho-listview>
+        <li soho-listview-item *ngFor="let fruit of fruits">
+          <p soho-listview-header>
+            {{ fruit }}
+          </p>
+        </li>
+      </soho-listview>
+    </div>
+  </div>
+</div>
