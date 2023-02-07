@@ -14,8 +14,6 @@ export class PersonalizeMenuComponent implements OnInit {
 
   themes: SohoTheme[];
 
-  constructor() {}
-
   ngOnInit(): void {
     const defaultColor = this.personalize.personalizationColors().default;
     this.setColor(defaultColor);
@@ -27,9 +25,11 @@ export class PersonalizeMenuComponent implements OnInit {
 
   setColor(color: SohoPersonalizationColor) {
     this.currentColor = color.name;
-    this.personalize.colors = {
-      header: color.value,
-    };
+    if (color.id === "default") {
+      this.personalize.colors = "";
+    } else {
+      this.personalize.colors = color.value;
+    }
   }
 
   setTheme(theme: SohoTheme) {
