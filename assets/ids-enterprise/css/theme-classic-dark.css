@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*! 
- *  IDS Enterprise Components - v4.80.0
- *  Date: 2023-02-01T15:49:33.269Z
- *  Revision: 7520cb9abd12c575ac05a5ee12a7456debd5b2d6
+ *  IDS Enterprise Components - v4.80.2
+ *  Date: 2023-02-09T20:26:24.632Z
+ *  Revision: 0e727ecd75a27ff73155e99bc1a0c1028397aec7
  *  
  *  
  *  Apache License
@@ -2839,7 +2839,6 @@ html[class*='classic-'] .is-personalizable > .tab-list-container .tab.is-disable
 html[class*='classic-'] .is-personalizable.tab-container > .tab-list-container .tab.is-disabled a {
   color: rgba(255, 255, 255, 0.5); }
 
-.is-personalizable .personalize-subheader,
 .is-personalizable.tab-container.module-tabs {
   background-color: #1d5f8a; }
 
@@ -2849,10 +2848,6 @@ html[class*='classic-'] .is-personalizable.tab-container > .tab-list-container .
 .is-personalizable .personalize-actionable,
 .is-personalizable .personalize-actionable svg {
   color: #C8CBD4; }
-
-.is-personalizable .personalize-actionable:hover:not([disabled]),
-.is-personalizable .personalize-actionable:hover:not([disabled]) svg {
-  color: white; }
 
 .is-personalizable .personalize-actionable.is-focused:not(.hide-focus),
 .is-personalizable .personalize-actionable:focus:not(.hide-focus) {
@@ -6317,7 +6312,7 @@ html[dir='rtl'] .input-hideshow-text {
   -ms-transition: border-color 100ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   transition: border-color 100ms cubic-bezier(0.17, 0.04, 0.03, 0.94); }
   .hyperlink:hover:not([disabled]) {
-    color: #50535A; }
+    color: #69b5dd; }
   .hyperlink.show-visited:visited, .hyperlink.force-visited {
     color: #c7b4db; }
     .hyperlink.show-visited:visited:focus:not(.hide-focus), .hyperlink.show-visited:visited:active, .hyperlink.force-visited:focus:not(.hide-focus), .hyperlink.force-visited:active {
@@ -14829,16 +14824,23 @@ html[dir='rtl'] .btn.fontpicker {
       .header .toolbar .title button + span {
         position: relative;
         top: 2px; }
-      .header .toolbar .title h1 {
+      .header .toolbar .title h1,
+      .header .toolbar .title h2 {
         display: inline-block;
         max-width: 100%;
         overflow: hidden;
         text-overflow: ellipsis; }
-        .header .toolbar .title h1 + [class^='btn'] {
+        .header .toolbar .title h1 + [class^='btn'],
+        .header .toolbar .title h2 + [class^='btn'] {
           margin-left: 5px; }
-        .header .toolbar .title h1 span {
+        .header .toolbar .title h1 span,
+        .header .toolbar .title h2 span {
           display: block; }
-      .header .toolbar .title [class^='btn'] + h1 {
+      .header .toolbar .title h2 {
+        font-size: 1.8rem;
+        margin-inline-start: 8px; }
+      .header .toolbar .title [class^='btn'] + h1,
+      .header .toolbar .title [class^='btn'] + h2 {
         margin: 3px;
         max-width: calc(100% - 40px); }
       .header .toolbar .title .btn-menu {
@@ -27110,7 +27112,7 @@ html[dir='rtl'] .modal.contextual-action-panel .modal-header .flex-toolbar .tool
         .datagrid td .word-wrap .hyperlink:hover {
           display: inline; }
         .datagrid td .word-wrap .hyperlink:focus {
-          border-bottom: 1px solid #50535A !important; }
+          border-bottom: 1px solid #69b5dd !important; }
           .datagrid td .word-wrap .hyperlink:focus::after {
             border-color: transparent; }
       .datagrid td .word-wrap .micro-text {
@@ -27230,7 +27232,7 @@ html[dir='rtl'] .modal.contextual-action-panel .modal-header .flex-toolbar .tool
       display: inline-block;
       font-size: 1.4rem; }
       .datagrid td .hyperlink:hover {
-        color: #50535A; }
+        color: #69b5dd; }
       .datagrid td .hyperlink:focus {
         outline: none; }
       .datagrid td .hyperlink.micro-text {
@@ -27793,6 +27795,8 @@ html[dir='rtl'] .modal.contextual-action-panel .modal-header .flex-toolbar .tool
         min-height: 20px;
         min-width: 20px;
         width: 20px; }
+        .datagrid-header .datagrid-filter-wrapper .lookup-wrapper .trigger:hover {
+          background-color: transparent !important; }
         .datagrid-header .datagrid-filter-wrapper .lookup-wrapper .trigger:hover .icon {
           color: #1C1819; }
         .datagrid-header .datagrid-filter-wrapper .lookup-wrapper .trigger .icon {
@@ -35108,7 +35112,25 @@ html[dir='rtl'] .step-process-container .tree li.folder > a .icon-tree {
   background: #80ce4d; }
 
 .primary-bg-color {
-  background: #50535A; }
+  background: #fff; }
+
+html.theme-new-light .primary-bg-color {
+  background: #fff; }
+
+html.theme-new-contrast .primary-bg-color {
+  background: #fff; }
+
+html.theme-new-dark .primary-bg-color {
+  background: #606066; }
+
+html.theme-classic-light .primary-bg-color {
+  background: #368ac0; }
+
+html.theme-classic-contrast .primary-bg-color {
+  background: #134d71; }
+
+html.theme-classic-dark .primary-bg-color {
+  background: #50535a; }
 
 .primary-color {
   color: #50535A !important; }
