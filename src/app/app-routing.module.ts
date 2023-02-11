@@ -7,6 +7,7 @@ import { BusyWidgetComponent } from "./busy-widget/busy-widget.component";
 import { CheckboxModalComponent } from "./checkbox-modal/checkbox-modal.component";
 import { DatagridDialogComponent } from "./datagrid-dialog/datagrid-dialog.component";
 import { DatagridShortComponent } from "./datagrid-short/datagrid-short.component";
+import { HeaderButtonsComponent } from "./header-buttons/header-buttons.component";
 import { HeaderPersonalizationComponent } from "./header-personalization/header-personalization.component";
 import { HomepageEditingComponent } from "./homepage-editing/homepage-editing.component";
 import { IosContextMenuComponent } from "./ios-context-menu/ios-context-menu.component";
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: "datagrid-short", component: DatagridShortComponent },
   { path: "busy-widget", component: BusyWidgetComponent },
   { path: "header-personalization", component: HeaderPersonalizationComponent },
+  { path: "header-buttons", component: HeaderButtonsComponent },
 ];
 
 @NgModule({

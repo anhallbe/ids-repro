@@ -1,0 +1,28 @@
+<soho-header>
+  <soho-toolbar-flex>
+    <soho-toolbar-flex-section [isButtonSet]="true">
+      <button soho-button="primary">Primary Button</button>
+      <button soho-button="secondary">Secondary Button</button>
+      <button soho-button="tertiary">Tertiary Button</button>
+      <button soho-button="icon" icon="component" title="Icon Button"></button>
+      <button soho-menu-button>Menu Button</button>
+      <ul soho-popupmenu>
+        <li soho-popupmenu-item>
+          <a soho-popupmenu-label>Item 1</a>
+        </li>
+        <li soho-popupmenu-item>
+          <a soho-popupmenu-label>Item 2</a>
+        </li>
+        <li soho-popupmenu-item>
+          <a soho-popupmenu-label>Item 3</a>
+        </li>
+      </ul>
+    </soho-toolbar-flex-section>
+  </soho-toolbar-flex>
+</soho-header>
+<div class="row">
+  <p>
+    Secondary button is different from the others with non-default color. Mostly
+    in light theme. Both the initial state and on hover.
+  </p>
+</div>
