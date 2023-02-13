@@ -19,6 +19,7 @@ import { NestedBusyComponent } from "./nested-busy/nested-busy.component";
 import { PopupmenuNavigationComponent } from "./popupmenu-navigation/popupmenu-navigation.component";
 import { PopupmenuToolbarComponent } from "./popupmenu-toolbar/popupmenu-toolbar.component";
 import { TabsComponent } from "./tabs/tabs.component";
+import { WidgetColorsComponent } from "./widget-colors/widget-colors.component";
 
 const routes: Routes = [
   { path: "ios-context-menu", component: IosContextMenuComponent },
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: "header-personalization", component: HeaderPersonalizationComponent },
   { path: "header-buttons", component: HeaderButtonsComponent },
   { path: "lookup-overflow", component: LookupOverflowComponent },
+  { path: "widget-colors", component: WidgetColorsComponent },
 ];
 
 @NgModule({
