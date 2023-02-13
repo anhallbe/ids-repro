@@ -11,6 +11,7 @@ import { HeaderButtonsComponent } from "./header-buttons/header-buttons.componen
 import { HeaderPersonalizationComponent } from "./header-personalization/header-personalization.component";
 import { HomepageEditingComponent } from "./homepage-editing/homepage-editing.component";
 import { IosContextMenuComponent } from "./ios-context-menu/ios-context-menu.component";
+import { LookupOverflowComponent } from "./lookup-overflow/lookup-overflow.component";
 import { LookupSourceComponent } from "./lookup-source/lookup-source.component";
 import { LookupComponent } from "./lookup/lookup.component";
 import { NestedAboutComponent } from "./nested-about/nested-about.component";
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: "busy-widget", component: BusyWidgetComponent },
   { path: "header-personalization", component: HeaderPersonalizationComponent },
   { path: "header-buttons", component: HeaderButtonsComponent },
+  { path: "lookup-overflow", component: LookupOverflowComponent },
 ];
 
 @NgModule({
