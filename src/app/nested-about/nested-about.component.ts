@@ -1,10 +1,12 @@
 import { Component } from "@angular/core";
-import { SohoAboutService, SohoModalDialogService } from "ids-enterprise-ng";
+import { SohoAboutService, SohoButtonModule, SohoModalDialogService } from "ids-enterprise-ng";
 
 @Component({
-  selector: "app-nested-about",
-  templateUrl: "./nested-about.component.html",
-  styleUrls: ["./nested-about.component.css"],
+    selector: "app-nested-about",
+    templateUrl: "./nested-about.component.html",
+    styleUrls: ["./nested-about.component.css"],
+    standalone: true,
+    imports: [SohoButtonModule],
 })
 export class NestedAboutComponent {
   constructor(

@@ -1,10 +1,12 @@
 import { Component, OnInit } from "@angular/core";
-import { SohoModalDialogService } from "ids-enterprise-ng";
+import { SohoButtonModule, SohoCheckBoxModule, SohoLabelModule, SohoModalDialogService } from "ids-enterprise-ng";
 
 @Component({
-  selector: "app-checkbox-modal",
-  templateUrl: "./checkbox-modal.component.html",
-  styleUrls: ["./checkbox-modal.component.css"],
+    selector: "app-checkbox-modal",
+    templateUrl: "./checkbox-modal.component.html",
+    styleUrls: ["./checkbox-modal.component.css"],
+    standalone: true,
+    imports: [SohoButtonModule],
 })
 export class CheckboxModalComponent implements OnInit {
   constructor(private modalService: SohoModalDialogService) {}
@@ -24,7 +26,7 @@ export class CheckboxModalComponent implements OnInit {
 }
 
 @Component({
-  template: `
+    template: `
     <div class="field">
       <div class="switch">
         <input
@@ -39,5 +41,7 @@ export class CheckboxModalComponent implements OnInit {
       </div>
     </div>
   `,
+    standalone: true,
+    imports: [SohoCheckBoxModule, SohoLabelModule],
 })
 export class InnerModalComponent {}

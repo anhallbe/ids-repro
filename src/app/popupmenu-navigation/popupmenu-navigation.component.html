@@ -9,14 +9,16 @@
   soho-button="icon"
   icon="more"
   trigger="click"
-  menu="menu"></button>
+menu="menu"></button>
 <ul soho-popupmenu id="menu">
-  <li soho-popupmenu-item *ngIf="showItem">
-    <a soho-popupmenu-label (click)="hideItem()"
-      >This item will cause navigation</a
-    >
-  </li>
-  <li soho-popupmenu-item [class.hidden]="!showItem">
-    <a soho-popupmenu-label (click)="hideItem()">...but this will not</a>
-  </li>
-</ul>
+  @if (showItem) {
+    <li soho-popupmenu-item>
+      <a soho-popupmenu-label (click)="hideItem()"
+        >This item will cause navigation</a
+        >
+      </li>
+    }
+    <li soho-popupmenu-item [class.hidden]="!showItem">
+      <a soho-popupmenu-label (click)="hideItem()">...but this will not</a>
+    </li>
+  </ul>

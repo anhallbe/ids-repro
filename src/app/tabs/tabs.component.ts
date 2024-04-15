@@ -1,9 +1,12 @@
 import { Component, HostListener } from "@angular/core";
+import { SohoTabsModule } from "ids-enterprise-ng";
 
 @Component({
-  selector: "app-tabs",
-  templateUrl: "./tabs.component.html",
-  styleUrls: ["./tabs.component.css"],
+    selector: "app-tabs",
+    templateUrl: "./tabs.component.html",
+    styleUrls: ["./tabs.component.css"],
+    standalone: true,
+    imports: [SohoTabsModule],
 })
 export class TabsComponent {
   @HostListener("window:resize") resized() {

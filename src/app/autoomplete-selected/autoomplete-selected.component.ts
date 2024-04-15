@@ -1,11 +1,21 @@
+import { AsyncPipe } from "@angular/common";
 import { Component } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { SohoAutoCompleteModule, SohoLabelModule } from "ids-enterprise-ng";
 import { Observable, interval } from "rxjs";
-import { startWith, map } from "rxjs/operators";
+import { map, startWith } from "rxjs/operators";
 
 @Component({
-  selector: "app-autoomplete-selected",
-  templateUrl: "./autoomplete-selected.component.html",
-  styleUrls: ["./autoomplete-selected.component.css"],
+    selector: "app-autoomplete-selected",
+    templateUrl: "./autoomplete-selected.component.html",
+    styleUrls: ["./autoomplete-selected.component.css"],
+    standalone: true,
+    imports: [
+        SohoLabelModule,
+        SohoAutoCompleteModule,
+        FormsModule,
+        AsyncPipe,
+    ],
 })
 export class AutoompleteSelectedComponent {
   model: string;

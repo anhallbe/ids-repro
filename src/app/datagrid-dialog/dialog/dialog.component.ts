@@ -1,9 +1,12 @@
 import { Component, OnInit } from "@angular/core";
+import { SohoDataGridModule } from "ids-enterprise-ng";
 
 @Component({
-  selector: "app-dialog",
-  templateUrl: "./dialog.component.html",
-  styleUrls: ["./dialog.component.css"],
+    selector: "app-dialog",
+    templateUrl: "./dialog.component.html",
+    styleUrls: ["./dialog.component.css"],
+    standalone: true,
+    imports: [SohoDataGridModule],
 })
 export class DialogComponent implements OnInit {
   columns: SohoDataGridColumn[] = [

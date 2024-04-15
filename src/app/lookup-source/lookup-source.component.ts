@@ -1,9 +1,17 @@
 import { Component } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { SohoLabelModule, SohoLookupModule } from "ids-enterprise-ng";
 
 @Component({
-  selector: "app-lookup-source",
-  templateUrl: "./lookup-source.component.html",
-  styleUrls: ["./lookup-source.component.css"],
+    selector: "app-lookup-source",
+    templateUrl: "./lookup-source.component.html",
+    styleUrls: ["./lookup-source.component.css"],
+    standalone: true,
+    imports: [
+        SohoLabelModule,
+        SohoLookupModule,
+        FormsModule,
+    ],
 })
 export class LookupSourceComponent {
   model = ["first", "third"];

@@ -1,9 +1,12 @@
 import { Component, OnInit } from "@angular/core";
+import { SohoBusyIndicatorModule } from "ids-enterprise-ng";
 
 @Component({
-  selector: "app-nested-busy",
-  templateUrl: "./nested-busy.component.html",
-  styleUrls: ["./nested-busy.component.css"],
+    selector: "app-nested-busy",
+    templateUrl: "./nested-busy.component.html",
+    styleUrls: ["./nested-busy.component.css"],
+    standalone: true,
+    imports: [SohoBusyIndicatorModule],
 })
 export class NestedBusyComponent implements OnInit {
   busy1: boolean;

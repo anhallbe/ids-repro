@@ -1,13 +1,17 @@
 <button soho-menu-button class="btn">{{ currentTheme }}</button>
 <ul class="popupmenu">
-  <li *ngFor="let theme of themes">
-    <a (click)="setTheme(theme)">{{ theme.name }}</a>
-  </li>
+  @for (theme of themes; track theme) {
+    <li>
+      <a (click)="setTheme(theme)">{{ theme.name }}</a>
+    </li>
+  }
 </ul>
 <button soho-menu-button class="btn">{{ currentColor }}</button>
 <ul class="popupmenu">
-  <li *ngFor="let color of personalize.personalizationColors() | keyvalue">
-    <a (click)="setColor(color.value)">{{ color.value.name }}</a>
-  </li>
+  @for (color of personalize.personalizationColors() | keyvalue; track color) {
+    <li>
+      <a (click)="setColor(color.value)">{{ color.value.name }}</a>
+    </li>
+  }
 </ul>
 <div soho-personalize></div>

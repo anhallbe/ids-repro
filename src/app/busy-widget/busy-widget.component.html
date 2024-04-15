@@ -24,11 +24,13 @@
       [blockUI]="true">
       <input soho-input [(ngModel)]="query" (ngModelChange)="search()" />
       <soho-listview>
-        <li soho-listview-item *ngFor="let fruit of fruits">
-          <p soho-listview-header>
-            {{ fruit }}
-          </p>
-        </li>
+        @for (fruit of fruits; track fruit) {
+          <li soho-listview-item>
+            <p soho-listview-header>
+              {{ fruit }}
+            </p>
+          </li>
+        }
       </soho-listview>
     </div>
   </div>

@@ -44,7 +44,7 @@
       },
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
             "outputPath": "dist/ids-repro",
             "index": "src/index.html",
@@ -71,7 +71,6 @@
               "./node_modules/d3/dist/d3.min.js",
               "./node_modules/ids-enterprise/dist/js/sohoxi.min.js"
             ],
-            "vendorChunk": true,
             "extractLicenses": false,
             "buildOptimizer": false,
             "sourceMap": true,
@@ -91,7 +90,6 @@
               "sourceMap": false,
               "namedChunks": false,
               "extractLicenses": true,
-              "vendorChunk": false,
               "buildOptimizer": true,
               "budgets": [
                 {
@@ -110,18 +108,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ids-repro:build"
+            "buildTarget": "ids-repro:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ids-repro:build:production"
+              "buildTarget": "ids-repro:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ids-repro:build"
+            "buildTarget": "ids-repro:build"
           }
         },
         "test": {

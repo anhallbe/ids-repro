@@ -1,10 +1,19 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
-import { SohoDataGridComponent } from "ids-enterprise-ng";
+import { SohoButtonModule, SohoDataGridComponent, SohoDataGridModule, SohoMenuButtonModule, SohoPopupMenuModule, SohoToolbarFlexModule, SohoToolbarModule } from "ids-enterprise-ng";
 
 @Component({
-  selector: "app-popupmenu-toolbar",
-  templateUrl: "./popupmenu-toolbar.component.html",
-  styleUrls: ["./popupmenu-toolbar.component.css"],
+    selector: "app-popupmenu-toolbar",
+    templateUrl: "./popupmenu-toolbar.component.html",
+    styleUrls: ["./popupmenu-toolbar.component.css"],
+    standalone: true,
+    imports: [
+        SohoToolbarFlexModule,
+        SohoButtonModule,
+        SohoToolbarModule,
+        SohoMenuButtonModule,
+        SohoPopupMenuModule,
+        SohoDataGridModule,
+    ],
 })
 export class PopupmenuToolbarComponent implements OnInit {
   @ViewChild(SohoDataGridComponent) datagrid: SohoDataGridComponent;

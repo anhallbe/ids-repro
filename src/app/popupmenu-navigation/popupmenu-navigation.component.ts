@@ -1,9 +1,17 @@
+
 import { Component } from "@angular/core";
+import { SohoButtonModule, SohoContextMenuModule, SohoPopupMenuModule } from "ids-enterprise-ng";
 
 @Component({
-  selector: "app-popupmenu-navigation",
-  templateUrl: "./popupmenu-navigation.component.html",
-  styleUrls: ["./popupmenu-navigation.component.css"],
+    selector: "app-popupmenu-navigation",
+    templateUrl: "./popupmenu-navigation.component.html",
+    styleUrls: ["./popupmenu-navigation.component.css"],
+    standalone: true,
+    imports: [
+    SohoButtonModule,
+    SohoContextMenuModule,
+    SohoPopupMenuModule
+],
 })
 export class PopupmenuNavigationComponent {
   showItem = true;

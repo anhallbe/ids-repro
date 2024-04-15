@@ -1,14 +1,14 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
-import { SohoButtonModule, SohoDataGridComponent, SohoDataGridModule } from "ids-enterprise-ng";
+import { Component, ViewChild } from "@angular/core";
+import { SohoButtonModule, SohoDataGridComponent, SohoDataGridModule, SohoSplitterModule } from "ids-enterprise-ng";
 
 @Component({
-    selector: "app-datagrid-short",
-    templateUrl: "./datagrid-short.component.html",
-    styleUrls: ["./datagrid-short.component.css"],
+    selector: "app-datagrid-splitter",
+    templateUrl: "./datagrid-splitter.component.html",
+    styleUrls: ["./datagrid-splitter.component.css"],
     standalone: true,
-    imports: [SohoButtonModule, SohoDataGridModule],
+    imports: [SohoButtonModule, SohoDataGridModule, SohoSplitterModule],
 })
-export class DatagridShortComponent implements OnInit {
+export class DatagridSplitterComponent  {
   @ViewChild(SohoDataGridComponent) grid: SohoDataGridComponent;
 
   gridOptions: SohoDataGridOptions = {
@@ -37,13 +37,4 @@ export class DatagridShortComponent implements OnInit {
       },
     ],
   };
-
-  constructor() {}
-
-  ngOnInit(): void {}
-
-  applyOptions() {
-    this.gridOptions.rowHeight = "short";
-    this.grid.updated();
-  }
 }

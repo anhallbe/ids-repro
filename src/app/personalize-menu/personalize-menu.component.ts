@@ -1,10 +1,17 @@
+import { KeyValuePipe } from "@angular/common";
 import { Component, OnInit, ViewChild } from "@angular/core";
-import { SohoPersonalizeDirective } from "ids-enterprise-ng";
+import { SohoMenuButtonModule, SohoPersonalizeDirective, SohoPersonalizeModule } from "ids-enterprise-ng";
 
 @Component({
-  selector: "app-personalize-menu",
-  templateUrl: "./personalize-menu.component.html",
-  styleUrls: ["./personalize-menu.component.css"],
+    selector: "app-personalize-menu",
+    templateUrl: "./personalize-menu.component.html",
+    styleUrls: ["./personalize-menu.component.css"],
+    standalone: true,
+    imports: [
+    SohoMenuButtonModule,
+    SohoPersonalizeModule,
+    KeyValuePipe
+],
 })
 export class PersonalizeMenuComponent implements OnInit {
   @ViewChild(SohoPersonalizeDirective, { static: true })

@@ -1,5 +1,4 @@
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
+import { Routes } from "@angular/router";
 import { AccordionFocusComponent } from "./accordion-focus/accordion-focus.component";
 import { AutocompleteXssComponent } from "./autocomplete-xss/autocomplete-xss.component";
 import { AutoompleteSelectedComponent } from "./autoomplete-selected/autoomplete-selected.component";
@@ -7,6 +6,7 @@ import { BusyWidgetComponent } from "./busy-widget/busy-widget.component";
 import { CheckboxModalComponent } from "./checkbox-modal/checkbox-modal.component";
 import { DatagridDialogComponent } from "./datagrid-dialog/datagrid-dialog.component";
 import { DatagridShortComponent } from "./datagrid-short/datagrid-short.component";
+import { DatagridSplitterComponent } from "./datagrid-splitter/datagrid-splitter.component";
 import { HeaderButtonsComponent } from "./header-buttons/header-buttons.component";
 import { HeaderPersonalizationComponent } from "./header-personalization/header-personalization.component";
 import { HomepageEditingComponent } from "./homepage-editing/homepage-editing.component";
@@ -21,7 +21,7 @@ import { PopupmenuToolbarComponent } from "./popupmenu-toolbar/popupmenu-toolbar
 import { TabsComponent } from "./tabs/tabs.component";
 import { WidgetColorsComponent } from "./widget-colors/widget-colors.component";
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: "ios-context-menu", component: IosContextMenuComponent },
   { path: "nested-busy", component: NestedBusyComponent },
   { path: "accordion-focus", component: AccordionFocusComponent },
@@ -37,15 +37,10 @@ const routes: Routes = [
   { path: "popupmenu-toolbar", component: PopupmenuToolbarComponent },
   { path: "datagrid-dialog", component: DatagridDialogComponent },
   { path: "datagrid-short", component: DatagridShortComponent },
+  { path: "datagrid-splitter", component: DatagridSplitterComponent },
   { path: "busy-widget", component: BusyWidgetComponent },
   { path: "header-personalization", component: HeaderPersonalizationComponent },
   { path: "header-buttons", component: HeaderButtonsComponent },
   { path: "lookup-overflow", component: LookupOverflowComponent },
   { path: "widget-colors", component: WidgetColorsComponent },
 ];
-
-@NgModule({
-  exports: [RouterModule],
-  imports: [RouterModule.forRoot(routes)],
-})
-export class AppRoutingModule {}

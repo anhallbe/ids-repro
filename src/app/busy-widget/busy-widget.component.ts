@@ -1,4 +1,4 @@
-import { CommonModule } from "@angular/common";
+
 import { Component } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { SohoComponentsModule } from "ids-enterprise-ng";
@@ -7,7 +7,7 @@ import { firstValueFrom, timer } from "rxjs";
 @Component({
   selector: "app-busy-widget",
   standalone: true,
-  imports: [CommonModule, FormsModule, SohoComponentsModule],
+  imports: [FormsModule, SohoComponentsModule],
   templateUrl: "./busy-widget.component.html",
   styleUrls: ["./busy-widget.component.css"],
 })
