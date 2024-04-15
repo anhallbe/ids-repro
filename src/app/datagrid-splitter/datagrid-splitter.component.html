@@ -1,7 +1,12 @@
-<section>
-  <p>The Datagrid is 500000px wide, for some reason...</p>
-  <soho-splitter></soho-splitter>
-</section>
-<section>
-  <div soho-datagrid="auto" [gridOptions]="gridOptions"></div>
-</section>
+<div class="two-column no-scroll" role="main">
+  <div class="sidebar scrollable" style="width: 20%">
+    <p>The datagrid only has one column when placed next to a splitter. Happens in 4.94 but not in 4.93</p>
+    <soho-splitter [isSplitterRight]="true" [collapseButton]="true" [save]="false">
+      <div class="panel-header"></div>
+    </soho-splitter>
+  </div>
+
+  <div class="scrollable-area no-scroll" style="width: 80%">
+    <div soho-datagrid="auto" [gridOptions]="gridOptions"></div>
+  </div>
+</div>
