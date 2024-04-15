@@ -25,6 +25,7 @@ Soho.Locale.addCulture('ar-SA', {
         timestampMillis: 'h:mm:ss.SSS a',
         hour: 'h:mm a',
         datetime: 'yyyy/MM/dd h:mm a',
+        dateTimestamp: 'yyyy/MM/dd h:mm:ss a',
         datetimeMillis: 'yyyy/MM/dd h:mm:ss.SSS a',
         timezone: 'yyyy/MM/dd h:mm a zz',
         timezoneLong: 'yyyy/MM/dd h:mm a zzzz'
@@ -297,5 +298,8 @@ Soho.Locale.addCulture('ar-SA', {
     decimal: '٫',
     group: '٬',
     groupSizes: [3, 3]
+  },
+  punctuation: {
+    comma: '،'
   }
 });

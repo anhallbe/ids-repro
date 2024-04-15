@@ -25,6 +25,7 @@ Soho.Locale.addCulture('en-IN', {
       hour: 'h:mm a',
       datetime: 'dd-MM-yyyy h:mm a',
       datetimeMillis: 'dd-MM-yyyy h:mm:ss.SSS a',
+      dateTimestamp: 'dd-MM-yyyy h:mm:ss a',
       timezone: 'dd-MM-yyyy h:mm a zz',
       timezoneLong: 'dd-MM-yyyy h:mm a zzzz'
     }, // Infered short + short gregorian/dateTimeFormats
@@ -58,5 +59,8 @@ Soho.Locale.addCulture('en-IN', {
     decimal: '.',
     group: ',',
     groupSizes: [3, 2]
+  },
+  punctuation: {
+    comma: ','
   }
 });

@@ -25,6 +25,7 @@ Soho.Locale.addCulture('en-NZ', {
       hour: 'h:mm a',
       datetime: 'd/MM/yyyy h:mm a',
       datetimeMillis: 'd/MM/yyyy h:mm:ss.SSS a',
+      dateTimestamp: 'd/MM/yyyy h:mm:ss a',
       timezone: 'd/MM/yyyy h:mm a zz',
       timezoneLong: 'd/MM/yyyy h:mm a zzzz'
     }, // Infered short + short gregorian/dateTimeFormats
@@ -58,5 +59,8 @@ Soho.Locale.addCulture('en-NZ', {
     decimal: '.',
     group: ',',
     groupSizes: [3, 3]
+  },
+  punctuation: {
+    comma: ','
   }
 });
